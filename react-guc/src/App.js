@@ -26,12 +26,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <User
-          name={this.state.user.name}
-          bio={this.state.user.bio}
           avatar_url={this.state.user.avatar_url}
+          bio={this.state.user.bio}
+          blog={this.state.user.blog}
           login={this.state.user.login}
-          url={this.state.user.url}
+          name={this.state.user.name}
           repos_url={this.state.user.repos_url}
+          url={this.state.user.url}
         />
         <main role="main">
           <section>

@@ -15,6 +15,7 @@ const User = props => {
 					login={props.login}
 				/>
 				<UserLinks
+					blog={props.blog}
 					url={props.url}
 					repos_url={props.repos_url}
 				/>
