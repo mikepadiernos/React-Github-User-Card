@@ -14,7 +14,7 @@ gulp.task('app', () => {
 
 	return gulp.src('./styl/App.styl')
 		.pipe(stylus({
-			use: [nib(), rupture(), typographic()]
+			use: [nib(), rupture(), typographic() ]
 		}))
 		// .pipe(postcss(processors))
 		.pipe(gulp.dest('./css'));

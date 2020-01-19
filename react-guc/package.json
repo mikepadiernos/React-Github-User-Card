@@ -38,6 +38,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-stylus": "^2.7.0",
     "nib": "^1.1.2",
+    "normalize-styl": "^4.1.1",
     "postcss": "^7.0.26",
     "rupture": "^0.7.1",
     "styled-components": "^5.0.0",
