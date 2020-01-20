@@ -597,6 +597,9 @@ header section.user.user-demographics header .user-login h2 {
 header section.user.user-demographics .user-biography {
   padding: 0 1rem;
 }
+header section.user.user-demographics .user-biography .bio {
+  display: block;
+}
 header section.user.user-demographics .user-links {
   display: -webkit-box;
   display: -moz-box;
@@ -622,6 +625,42 @@ header section.user.user-demographics .user-links a i.fa {
 }
 header section.user.user-demographics .user-links a i.fa:before {
   font-size: 18px;
+}
+header section.user.user-demographics .user-stats {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+header section.user.user-demographics .user-stats .stats-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 33%;
+}
+header section.user.user-demographics .user-stats .stats-container .stats {
+  display: block;
+  height: auto;
+}
+header section.user.user-demographics .user-stats .stats-container .stats.stats-text {
+  font-size: 3rem;
+  height: 3rem;
+  line-height: 1;
 }
 .wrapper {
   width: 960px;

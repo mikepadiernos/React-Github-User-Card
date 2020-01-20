@@ -3,10 +3,14 @@ import React from "react";
 const UserBiography = props => {
 	return (
 		<div className="user user-biography">
-			<span className="bio-text">{props.bio}</span>
-			<span className="bio-label">Biography</span>
-			<span className="bio-text">{props.location}</span>
-			<span className="bio-label">Location</span>
+			<div className="bio-container">
+				<span className="bio bio-text">{props.bio}</span>
+				{/*<span className="bio bio-label">Biography</span>*/}
+			</div>
+			{/*<div className="bio bio-container">*/}
+			{/*	<span className="bio bio-text">{props.location}</span>*/}
+			{/*	<span className="bio bio-label">Location</span>*/}
+			{/*</div>*/}
 		</div>
 	)
 };
