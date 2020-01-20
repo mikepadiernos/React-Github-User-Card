@@ -10,7 +10,8 @@ import axios from 'axios';
 
 // IMPORT: Reusable components
 import User from "./Components/User/User";
-import UserStats from "./Components/User/UserStats";
+import FollowerList from "./Components/Followers/FollowerList";
+import Follower from "./Components/Followers/Follower";
 
 class App extends React.Component {
 
@@ -57,9 +58,12 @@ class App extends React.Component {
           repos_url={this.state.user.repos_url}
           url={this.state.user.url}
         />
-        <main role="main">
-          <section>
-          </section>
+        <main role="main" id="main-content" className="main-content">
+          <FollowerList
+            followers={this.state.followers}
+            login={this.state.followers.login}
+            avatar_url={this.state.followers.avatar_url}
+          />
         </main>
       </div>
     );
