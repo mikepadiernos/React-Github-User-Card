@@ -29,5 +29,5 @@ export default {
 	"followers": 19,
 	"following": 10,
 	"created_at": "2019-08-26T16:11:45Z",
-	"updated_at": "2020-01-18T02:25:54Z"
+	"updated_at": "2020-01-20T03:27:06Z"
 }

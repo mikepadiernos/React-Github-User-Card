@@ -29,6 +29,7 @@ class App extends React.Component {
           avatar_url={this.state.user.avatar_url}
           bio={this.state.user.bio}
           blog={this.state.user.blog}
+          location={this.state.user.location}
           login={this.state.user.login}
           name={this.state.user.name}
           repos_url={this.state.user.repos_url}

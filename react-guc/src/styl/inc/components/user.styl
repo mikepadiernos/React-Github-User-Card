@@ -10,24 +10,57 @@ header
 		&.user
 			&.user-avatar
 				.avatar-container
-					height 270px
-					width 270px
+					height 340px
+					width 340px
 					img
 						&.image-avatar
 							height 100%
 							width auto
 			&.user-demographics
-				padding 0 3rem
+				display flex
+				flex-flow column wrap
+				justify-content space-between
+				margin-left 0.25rem
+				padding 0
+				position relative
+				width 100%
 				header
 					align-items flex-start
 					display flex
 					flex-flow column wrap
+					//height 30%
+					justify-content flex-start
+					padding 0.5rem 1rem
 					.user-name,
 					.user-login
 						display block
 					.user-name
 						h1
+							font-weight bold
 							margin-bottom 0
 					.user-login
 						h2
+							font-size 0.9rem
 							margin-top 0
+				.user-biography
+					//height 30%
+					//margin-top 1.25rem
+					padding 0 1rem
+				.user-links
+					display flex
+					margin-right 2px
+					position absolute
+					right 0
+					a
+						background-color #d9d9d9
+						color #fff
+						font-family font-default-sans-serif, font-family-san-serif
+						font-size 16px
+						margin-left 0.25rem
+						padding 6px 12px
+						text-decoration none
+						i
+							&.fa
+								margin-right 0.25rem
+								&:before
+									font-size 18px
