@@ -12,6 +12,12 @@ const Follower = props => {
 				<div className="card-avatar">
 					<img src={props.avatar_url} alt={props.login} />
 				</div>
+				<div className="card-links">
+					<a href={props.html}>
+						<i className="fa fa-github" />
+						<span>Github</span>
+					</a>
+				</div>
 			</article>
 		</li>
 	)

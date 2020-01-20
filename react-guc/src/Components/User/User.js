@@ -22,7 +22,7 @@ const User = props => {
 					/>
 					<UserLinks
 						blog={props.blog}
-						url={props.url}
+						html={props.html}
 						repos_url={props.repos_url}
 					/>
 					<UserBiography

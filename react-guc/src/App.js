@@ -2,16 +2,9 @@ import React from 'react';
 // import logo from './logo.svg';
 import './css/App.css';
 
-// IMPORT: Sample data
-import MyData from "./Data/MyData";
-
-// IMPORT: utility components
-import axios from 'axios';
-
 // IMPORT: Reusable components
 import User from "./Components/User/User";
 import FollowerList from "./Components/Followers/FollowerList";
-import Follower from "./Components/Followers/Follower";
 
 class App extends React.Component {
 
@@ -19,11 +12,6 @@ class App extends React.Component {
     user: [],
     followers: []
   };
-
-  // componentDidMount() {
-  //   const myData = MyData;
-  //   this.setState({ ...this.state, user: myData });
-  // }
 
   componentDidMount() {
     fetch("https://api.github.com/users/mikepadiernos")
@@ -51,6 +39,7 @@ class App extends React.Component {
           blog={this.state.user.blog}
           followers={this.state.user.followers}
           following={this.state.user.following}
+          html={this.state.user.html_url}
           location={this.state.user.location}
           login={this.state.user.login}
           name={this.state.user.name}
@@ -63,6 +52,7 @@ class App extends React.Component {
             followers={this.state.followers}
             login={this.state.followers.login}
             avatar_url={this.state.followers.avatar_url}
+            html={this.state.followers.html_url}
           />
         </main>
       </div>

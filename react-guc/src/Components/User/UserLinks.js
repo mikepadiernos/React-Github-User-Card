@@ -4,13 +4,13 @@ const UserLinks = props => {
 	return (
 		<div className="user user-links">
 			<div>
-				<a href={props.blog}>
+				<a href={props.blog} className="link-blog">
 					<i className="fa fa-globe" />
 						<span>Blog</span>
 				</a>
 			</div>
 			<div>
-				<a href={props.url}>
+				<a href={props.html} className="link-github">
 					<i className="fa fa-github" />
 						<span>Github</span>
 				</a>
