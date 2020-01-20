@@ -13,8 +13,8 @@ const Follower = props => {
 					<img src={props.avatar_url} alt={props.login} />
 				</div>
 				<div className="card-links">
-					<a href={props.html}>
-						<i className="fa fa-github" />
+					<a href={props.html_url}>
+						<i className="fa fa-github-alt" />
 						<span>Github</span>
 					</a>
 				</div>

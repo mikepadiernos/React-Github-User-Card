@@ -52,7 +52,7 @@ class App extends React.Component {
             followers={this.state.followers}
             login={this.state.followers.login}
             avatar_url={this.state.followers.avatar_url}
-            html={this.state.followers.html_url}
+            html_url={this.state.followers.html_url}
           />
         </main>
       </div>
