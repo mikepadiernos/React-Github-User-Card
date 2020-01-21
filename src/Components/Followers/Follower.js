@@ -8,7 +8,7 @@ const Follower = props => {
 					<h3 className="card-title">
 						<a href={props.html_url}>
 							<i className="fa fa-github-alt" />
-							<span>{props.login}</span>
+							<span>@{props.login}</span>
 						</a>
 					</h3>
 				</header>
