@@ -31,19 +31,20 @@ main
 									header
 										border-top 4px solid #c9c9c9
 										justify-content flex-start
-										padding 0.5rem
+										padding 1.5rem
 										h3
 											color #000000
-											font-size 1.25rem
+											font-size 2rem
 											line-height 1
 											margin-bottom 0
 									.card-avatar
 										display flex
-										min-height 310px
+										height auto
 										margin-bottom 4px
 										order -1
 										overflow hidden
 										position relative
+										width 100%
 										&:after
 											content ""
 											display block
@@ -93,21 +94,19 @@ main
 //											img
 //												width 390px
 //
-//+above(l)
-//	main
-//		&#main-content
-//			&.main-content
-//				.followers-container
-//					ul
-//						&.list-followers
-//							//grid-template-columns repeat(3, 1fr)
-//							//grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-//							li
-//								&.card
-//									article
-//										.card-avatar
-//											img
-//												width 310px
-//										.card-links
-//											bottom 6%
-//											right 1.5%
++above(l)
+	main
+		&#main-content
+			&.main-content
+				.followers-container
+					ul
+						&.list-followers
+							//grid-template-columns repeat(3, 1fr)
+							//grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+							li
+								&.card
+									article
+										header
+											padding 0.5rem
+										h3
+											font-size 1.25rem
