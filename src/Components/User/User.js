@@ -7,7 +7,6 @@ import UserTitles from "./UserTitles";
 
 const User = props => {
 	return (
-		<header role="banner" className="banner banner-container">
 			<div className="wrapper wrapper-banner">
 				<UserAvatar
 					avatar_url={props.avatar_url}
@@ -34,7 +33,6 @@ const User = props => {
 					/>
 				</section>
 			</div>
-		</header>
 	)
 };
 
