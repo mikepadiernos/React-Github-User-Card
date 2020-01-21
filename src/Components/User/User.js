@@ -13,15 +13,17 @@ const User = props => {
 					login={props.login}
 				/>
 				<section className="user user-demographics">
-					<UserTitles
-						name={props.name}
-						login={props.login}
-					/>
-					<UserLinks
-						blog={props.blog}
-						html={props.html}
-						repos_url={props.repos_url}
-					/>
+					<header className="user-header">
+						<UserTitles
+							name={props.name}
+							login={props.login}
+						/>
+						<UserLinks
+							blog={props.blog}
+							html={props.html}
+							repos_url={props.repos_url}
+						/>
+					</header>
 					<UserBiography
 						bio={props.bio}
 						location={props.location}
