@@ -14,14 +14,14 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    fetch("https://api.github.com/users/mikepadiernos")
+    fetch(" https://cors-anywhere.herokuapp.com/https://api.github.com/users/mikepadiernos")
       .then(res => res.json())
       .then(user => {
         console.log("fetch: user: ", user);
         this.setState({ ...this.state, user: user });
       })
       .catch(err => console.log("error on fetch: ", err));
-    fetch("https://api.github.com/users/mikepadiernos/followers")
+    fetch(" https://cors-anywhere.herokuapp.com/https://api.github.com/users/mikepadiernos/followers")
       .then(res => res.json())
       .then(followers => {
         console.log("fetch: followers: ", followers);

@@ -39,24 +39,34 @@ main
 											margin-bottom 0
 									.card-avatar
 										display flex
+										min-height 310px
 										margin-bottom 4px
 										order -1
+										overflow hidden
+										position relative
+										&:after
+											content ""
+											display block
+											padding-bottom 100%
 										img
-											width 310px
-											height auto
+											width 100%
+											height 100%
+											position absolute
 									.card-links
 										background-color #0074D9
 										border-radius 50%
-										bottom 10%
+										bottom 6%
 										box-shadow 0 12.1px 10px rgba(0, 0, 0, 0.065),
 										0 97px 80px rgba(0, 0, 0, 0.07)
 										position absolute
-										right 5%
+										right 1.5%
+										&:hover
+											background-color #1c95ff
 										a
 											display block
-											height 48px
+											height 55px
 											overflow hidden
-											width 48px
+											width 55px
 											text-decoration none
 											i
 												align-items center
@@ -66,38 +76,38 @@ main
 													color #ffffff
 												&.fa
 													font-size 22px
-													height 48px
+													height 55px
 
-+between('m', 'l')
-	main
-		&#main-content
-			&.main-content
-				.followers-container
-					ul
-						&.list-followers
-							//grid-template-columns repeat(2, 1fr)
-							li
-								&.card
-									article
-										.card-avatar
-											img
-												width 390px
-
-+above(l)
-	main
-		&#main-content
-			&.main-content
-				.followers-container
-					ul
-						&.list-followers
-							//grid-template-columns repeat(3, 1fr)
-							//grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-							li
-								&.card
-									article
-										.card-avatar
-											img
-												width 310px
-										.card-links
-											bottom 10%
-											right 5%
+//+between('m', 'l')
+//	main
+//		&#main-content
+//			&.main-content
+//				.followers-container
+//					ul
+//						&.list-followers
+//							//grid-template-columns repeat(2, 1fr)
+//							li
+//								&.card
+//									article
+//										.card-avatar
+//											img
+//												width 390px
+//
+//+above(l)
+//	main
+//		&#main-content
+//			&.main-content
+//				.followers-container
+//					ul
+//						&.list-followers
+//							//grid-template-columns repeat(3, 1fr)
+//							//grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+//							li
+//								&.card
+//									article
+//										.card-avatar
+//											img
+//												width 310px
+//										.card-links
+//											bottom 6%
+//											right 1.5%
