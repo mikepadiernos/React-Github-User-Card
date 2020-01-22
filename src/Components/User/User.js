@@ -7,24 +7,23 @@ import UserTitles from "./UserTitles";
 
 const User = props => {
 	return (
-		<header role="banner" className="banner banner-container">
 			<div className="wrapper wrapper-banner">
-				<section className="user user-avatar">
-					<UserAvatar
-						avatar_url={props.avatar_url}
-						login={props.login}
-					/>
-				</section>
+				<UserAvatar
+					avatar_url={props.avatar_url}
+					login={props.login}
+				/>
 				<section className="user user-demographics">
-					<UserTitles
-						name={props.name}
-						login={props.login}
-					/>
-					<UserLinks
-						blog={props.blog}
-						html={props.html}
-						repos_url={props.repos_url}
-					/>
+					<header className="user-header">
+						<UserTitles
+							name={props.name}
+							login={props.login}
+						/>
+						<UserLinks
+							blog={props.blog}
+							html={props.html}
+							repos_url={props.repos_url}
+						/>
+					</header>
 					<UserBiography
 						bio={props.bio}
 						location={props.location}
@@ -36,7 +35,6 @@ const User = props => {
 					/>
 				</section>
 			</div>
-		</header>
 	)
 };
 

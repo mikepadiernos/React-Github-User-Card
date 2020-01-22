@@ -11,7 +11,7 @@ const UserLinks = props => {
 			</div>
 			<div>
 				<a href={props.html} className="link-github">
-					<i className="fa fa-github" />
+					<i className="fa fa-github-alt" />
 						<span>Github</span>
 				</a>
 			</div>
