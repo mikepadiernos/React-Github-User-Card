@@ -1,4 +1,6 @@
 import React from "react";
+import GitHubCalendar from "react-github-calendar";
+
 import UserAvatar from "./UserAvatar";
 import UserBiography from "./UserBiography";
 import UserLinks from "./UserLinks";
@@ -24,10 +26,11 @@ const User = props => {
 							repos_url={props.repos_url}
 						/>
 					</header>
-					<UserBiography
-						bio={props.bio}
-						location={props.location}
-					/>
+					{/*<UserBiography*/}
+					{/*	// bio={props.bio}*/}
+					{/*	location={props.location}*/}
+					{/*/>*/}
+					<GitHubCalendar username="mikepadiernos" />
 					<UserStats
 						public_repos={props.public_repos}
 						followers={props.followers}
