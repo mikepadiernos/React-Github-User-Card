@@ -63,6 +63,7 @@ class App extends React.Component {
   }
 
   render() {
+    const username = this.state.user.login;
     return (
       <div className="App">
         <header role="banner" className="banner banner-container">
@@ -79,6 +80,7 @@ class App extends React.Component {
             public_repos={this.state.user.public_repos}
             repos_url={this.state.user.repos_url}
             url={this.state.user.url}
+            username={username}
           />
         </header>
         <main role="main" id="main-content" className="main-content">
@@ -91,6 +93,7 @@ class App extends React.Component {
             login={this.state.followers.login}
             avatar_url={this.state.followers.avatar_url}
             html_url={this.state.followers.html_url}
+            // username={this.state.followers.login}
           />
         </main>
       </div>

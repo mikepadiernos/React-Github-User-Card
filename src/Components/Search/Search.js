@@ -9,7 +9,7 @@ const Search = props => {
 					placeholder='Search ...'
 					onChange={props.handleChange}
 					type="text"
-					name="searchTerm"
+					name={props.searchTerm}
 					value={props.searchTerm}
 				/>
 			</div>

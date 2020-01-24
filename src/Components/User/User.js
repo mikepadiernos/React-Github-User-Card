@@ -8,6 +8,7 @@ import UserStats from "./UserStats";
 import UserTitles from "./UserTitles";
 
 const User = props => {
+
 	return (
 			<div className="wrapper wrapper-banner">
 				<UserAvatar
@@ -30,7 +31,9 @@ const User = props => {
 					{/*	// bio={props.bio}*/}
 					{/*	location={props.location}*/}
 					{/*/>*/}
-					<GitHubCalendar username="mikepadiernos" />
+					<GitHubCalendar
+						username={props.username}
+					/>
 					<UserStats
 						public_repos={props.public_repos}
 						followers={props.followers}

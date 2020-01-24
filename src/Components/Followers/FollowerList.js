@@ -12,6 +12,7 @@ const FollowerList = props => {
 							login={follower.login}
 							avatar_url={follower.avatar_url}
 							html_url={follower.html_url}
+							// login={follower.username}
 						/>
 					))}
 				</ul>
